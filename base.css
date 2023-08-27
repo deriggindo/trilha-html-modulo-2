@@ -5,6 +5,18 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 10px
+}
+
+thead {
+      background-color: lightgray;
+      font-weight: bold;
 }
 
 .wrapper {
@@ -20,11 +32,11 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: #30a5aa;
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #3db7c2;
     min-height: 150px;
 }
 .content {
@@ -32,7 +44,15 @@ body {
     min-height: 300px;
     padding: 20px;
 }
+
+a {
+    color: white;
+}
+
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: #3db7c2;
+    color: white;
     min-height: 150px;
+    padding: 20px;
+    font-size: smaller;
 }

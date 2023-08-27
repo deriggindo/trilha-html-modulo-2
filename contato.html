@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Plena</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="/">Página Principal</a></li>
+                <li><a href="/sobre.html">Sobre a Clínica</a></li>
+                <li><a href="/horario.html">Horário de Atendimento</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <!--
+        - Os telefones de contato (celular e whatsapp)
+        - Endereço completo da clínica
+        - Um Iframe com o Google Maps apontando o endereço da clínica
+        - Um formulário de contato com:
+            - Nome (type="text")
+            - E-mail (type="email")
+            - Assunto (type="text")
+            - Mensagem (textarea)
+            - Botões de envias e limpar formulário
+        -->
+
+        <div class="main">
+            <div class="header">
+                Header
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <h3>Telefones para contato</h3>
+                <p>📞 Ligação: <a href="tel:+419919191" target="_blank">(41) 99191-9191</a></p>
+                <p>💬 Whatsapp: <a href="https://wa.me/5541991234567?text=Ol%C3%A1%21+Estou+precisando+de+ajuda." target="_blank">(41) 99123-4567</a></p><br>
+
+                <h3>Endereço</h3>
+                <p>R. Vicente Machado, nº 2035<br>Centro - Curitiba - CEP: 80420-011</p>
+
+                <!--GOOGLE MAPS-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57631.37733370381!2d-49.32001653173411!3d-25.472974912310125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3928b56aaab%3A0xd79984662af5a938!2sVida%20Plena!5e0!3m2!1spt-BR!2sbr!4v1692851543875!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+
+                <!--FORMULÁRIO DE CONTATO-->
+                <h3>Deixe sua mensagem:</h3>
+                <form name="ticket" onsubmit="alert('Mensagem enviada com sucesso!\nEm até um dia útil, você receberá por email uma resposta da nossa equipe. Abraços! ❤');">
+
+                <script>
+                    function myFunction() {
+                        var txt;
+                        if (confirm("Tem certeza que deseja apagar tudo?")) {
+                        onreset;
+                        } else {
+                        close
+                        }
+                    }
+                    </script>
+                    
+                    
+                    <!--🟡🟡🟡 Falta ajustar esse "onreset" aqui em cima!!!!-->
+                    
+                    
+                    <label>Nome: </label><input type="text" name="name" required><br>
+                    <label>Email: </label><input type="email" name="email" required><br>
+                    <label>Assunto: </label><input type="text" name="topic" required><br>
+                    <label>Mensagem: </label><textarea name="message" rows="5" cols="50" placeholder="Digite aqui sua mensagem..." required></textarea><br><br><br>
+                    <button type="submit">Enviar mensagem</button><br><br>
+                    <button type="reset" onclick="myFunction()">Limpar</button>
+                </form>
+            </div>
+    
+            <div class="footer">
+                Footer
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
